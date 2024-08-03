@@ -1,2 +1,3 @@
 from animeflv import AnimeFLV
-    with AnimeFLV() as api:
+with AnimeFLV() as api:
+    api.search(input("serie: "))
