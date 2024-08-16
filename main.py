@@ -13,6 +13,8 @@ with AnimeFLV() as api:
             serie = elements[selection].id
             capitulo = info.episodes[index_episode].id
             results = api.get_links(serie, capitulo)
+            for result in results:
+                print(f"{result.server} - result")
 
         except Exception as e:
             print(e)
