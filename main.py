@@ -5,6 +5,6 @@ with AnimeFLV() as api:
         print(f"{i}, {elements.title}")
         try:
             selection = int(input("select option"))
-            api.get_anime_info()
+            api.get_anime_info(elements[selection].id)
         except Exception as e:
             print(e)
