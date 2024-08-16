@@ -10,6 +10,7 @@ with AnimeFLV() as api:
             for j, episode in enumerate(info.episodes):
                 print(f"{j} | Episode - {episode.id}")
             index_episode = int(input("select episode: "))
+            serie = elements[selection].id
 
         except Exception as e:
             print(e)
