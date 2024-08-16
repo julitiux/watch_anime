@@ -11,6 +11,7 @@ with AnimeFLV() as api:
                 print(f"{j} | Episode - {episode.id}")
             index_episode = int(input("select episode: "))
             serie = elements[selection].id
+            capitulo = info.episodes[index_episode].id
 
         except Exception as e:
             print(e)
