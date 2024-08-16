@@ -8,6 +8,7 @@ with AnimeFLV() as api:
             info = api.get_anime_info(elements[selection].id)
             info.episodes.reverse()
             for j, episode in enumerate(info.episodes):
+                print(f"{j} | Episode - {episode.id}")
 
         except Exception as e:
             print(e)
