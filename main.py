@@ -6,5 +6,6 @@ with AnimeFLV() as api:
         try:
             selection = int(input("select option"))
             info = api.get_anime_info(elements[selection].id)
+            info.episodes.reverse()
         except Exception as e:
             print(e)
