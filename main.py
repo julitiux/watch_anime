@@ -12,6 +12,7 @@ with AnimeFLV() as api:
             index_episode = int(input("select episode: "))
             serie = elements[selection].id
             capitulo = info.episodes[index_episode].id
+            results = api.get_links(serie, capitulo)
 
         except Exception as e:
             print(e)
