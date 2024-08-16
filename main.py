@@ -4,6 +4,6 @@ with AnimeFLV() as api:
     for i, elements in enumerate(elements):
         print(f"{i}, {elements.title}")
         try:
-            int(input("select option"))
+            selection = int(input("select option"))
         except Exception as e:
             print(e)
